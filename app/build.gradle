@@ -48,6 +48,7 @@ dependencies {
         exclude group:'net.sf.json-lib'
 
     }
+    implementation project(path: ':flutter')
 
 
 }

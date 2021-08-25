@@ -1,2 +1,8 @@
 rootProject.name = "InetApp"
 include ':app'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  '../outter/.android/include_flutter.groovy'
+))
+include ':subCommand'
